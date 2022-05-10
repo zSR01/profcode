@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+header{
+    background: var(--bg);
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 7%;
+    justify-content: space-between;
+    top: 0;left: 0; right: 0;
+    z-index: 1000;
+}
+
+header .logo img{
+    height: 120px;
+}
+
+header .navbar a{
+    font-size: 30px;
+    color: #fff;
+    margin: 10px;
+}
+
+header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.home {
+    align-items: center;
+}
+
+.titulo {
+    color: var(--main-color);
+    font-size: 35px;
+    margin-left: 42%;
+    padding: 20px 0 20px 0;
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+}
+
+.home .row .image img {
+    width: 300px;
+    height: 300px;
+    padding: 15px 20px 15px 20px;
+    margin-left: 60px;
+
+}
+
+.home .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.home .row .content h3 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 90px;
+}
+
+.home .row .content p {
+    color: #cccc;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.linguagens h1 {
+    color: var(--main-color);
+    font-size: 35px;
+    margin-left: 42%;
+    padding: 20px 0 20px 0;
+}
+
+.linguagens .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+    margin-bottom: 5%;
+    
+}
+
+.linguagens .box-container .box {
+    border: 1px solid var(--main-color);
+    text-align: center;
+    padding: 3rem 2rem;
+    margin: 10px 20px 10px 20px;
+}
+
+.linguagens .box-container .box p {
+    color: #cccc;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 2rem 0;
+}
+
+.linguagens .box-container .box img {
+    width: 200px;
+    height: 200px;
+}
+
+.footer{
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    color: #fff;
+    border: var(--border);
+    font-size: 15px;
+    padding: .7rem 2rem;
+}
+
+.footer .links a:hover {
+    background: var(--main-color);
+}
+
+.footer .credit {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.contact .heading{
+    color: var(--main-color);
+    font-size: 35px;
+    margin-left: 42%;
+    padding: 20px 0 20px 0;
+}
+
+.contact .row {
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+    
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2 rem;
+    background: var(--bg);
+    border: var(--border);
+    width: 750px;
+    margin-left: 25%;
+}
+
+.contact .row form .inputBox span {
+    color: #fff;
+    font-size: 2 rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 500px;
+    padding: 2rem;
+    font-size: 1.7 rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+iframe {
+    margin-left: 32%;
+    padding: 20px 20px 20px 20px;
+    background: var(--black);
+}
+
+.musica .titulom {
+    color: var(--main-color);
+    font-size: 35px;
+    margin-left: 30%;
+    padding: 20px 0 20px 0;
+}
+
+audio {
+    display: flex;
+    align-items: center;
+    margin-top: 2.2rem;
+    margin-bottom: 2 rem;
+    background: var(--bg);
+    border: var(--border);
+    width: 400px;
+    margin-left: 38%;
+}
+
+.musica .explicacao {
+    color:#fff;
+    font-size: 20px;
+    margin-left: 43%;
+    padding: 20px 0 20px 0;
+}
+
+.musica .exp2 {
+    color:#fff;
+    font-size: 20px;
+    margin-left: 45%;
+    padding: 20px 0 20px 0;
+}
+
+.musica .exp3 {
+    color:#fff;
+    font-size: 20px;
+    margin-left: 45%;
+    padding: 20px 0 20px 0;
+}
